@@ -1,0 +1,119 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#momentum-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("img/landscape-2494650_1280.jpg"); /* 배경 이미지 설정 */
+  background-size: cover; /* 이미지 크기 조정 */
+  background-position: center; /* 이미지 위치 조정 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+}
+
+#momentum-head {
+  text-align: center;
+}
+
+#time {
+  font-size: 100px;
+  color: #ddd;
+}
+
+#hello {
+  font-size: 50px;
+  color: #ddd;
+}
+
+#momentum-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todolist {
+  width: 300px; /* 입력 필드 너비 */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#add-todo-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#add-todo-button:hover {
+  background-color: #45a049;
+}
+
+/* 크기 조정 및 스타일 수정 */
+#todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px; /* 패딩을 늘려서 크기 증가 */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* 컨테이너와 동일한 너비 */
+  max-height: 80vh; /* 최대 높이 설정 */
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 추가 */
+}
+
+#todo-container h3 {
+  margin-top: 0;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-list li {
+  width: 300px; /* 입력 필드와 같은 너비 */
+  padding: 10px; /* 입력 필드와 같은 패딩 */
+  margin-bottom: 8px; /* 간격을 약간 늘림 */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; /* 테두리와 패딩을 너비에 포함 */
+}
+
+#todo-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.delete-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
